@@ -118,4 +118,51 @@
     cursor: pointer;
     display: none;
   }
+  .login {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background: url(../images/place1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1f);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 510px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .login-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top span {
+    font-family: var(--ff-montserrat);
+    color: var(--white);
+    margin-left: 5px;
+    font-size: smaller;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .top span a {
+    font-family: var(--ff-montserrat);
+    color: var(--white);
+    font-weight: 500;
+    margin-left: 10px;
+  }
   
