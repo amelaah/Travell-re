@@ -18,7 +18,8 @@
   --d-sage: hsl(156 24% 18%);
   --pastel-blue: hsl(199, 70%, 79%);
   --deti: hsl(191.76, 95.61%, 16.67%);
-  --l-blue: hsl(207, 32%, 63%);
+  --l-blue: hsl(207, 24%, 49%);
+  --haha: hsl(207, 82%, 89%);
 
   --ff-poppins: "Poppins", sans-serif;
   --ff-montserrat: "Montserrat", sans-serif;
@@ -114,7 +115,7 @@ header.sticky {
   font-size: 35px;
   font-weight: var(--fw-600);
   letter-spacing: 1px;
-  color: var(--cultured);
+  color: var(--l-blue);
   font-family: var(--ff-montserrat);
 }
 
@@ -123,7 +124,7 @@ header.sticky {
 }
 
 .navbar a {
-  color: var(--cultured);
+  color: var(--l-blue);
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
@@ -134,7 +135,7 @@ header.sticky {
 
 .navbar a:hover {
   background: transparent;
-  color: var(--dd-sage);
+  color: var(--gunmetal);
   box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3);
   border-radius: 4px;
 }
@@ -148,7 +149,7 @@ header.sticky {
 }
 
 .contact {
-  background: var(--deti);
+  background: var(--haha);
 }
 .help {
   position: relative;
@@ -159,7 +160,8 @@ header.sticky {
   font-family: var(--ff-montserrat);
   font-size: 50px;
   font-weight: 600;
-  color: var(--cultured);
+  color: var(--l-blue);
+  cursor: default;
 }
 .contact-container {
   /* position: relative;
@@ -186,7 +188,6 @@ header.sticky {
 .box {
   background-color: var(--white);
   border: 1px solid rgb(76, 101, 160);
-
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -216,6 +217,7 @@ header.sticky {
 
 .text h4 {
   padding-top: 30px;
+  padding-left: 27px;
   font-size: 30px;
   font-weight: 600;
   font-family: var(--ff-montserrat);
