@@ -216,10 +216,15 @@ header .sticky {
   color: var(--black);
 }
 
+.text{
+  text-align: center;
+  margin-top: 6%;
+}
 .text h2 {
-  font-family: var(--ff-montserrat);
-  /* font-size: 30px;   */
-  line-height: 1.1;
+  margin-top: 50px;
+  font-size: var(--fs-2);
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
 }
 /* .row-items{
    display: grid;
@@ -301,6 +306,7 @@ header .sticky {
 
 .title {
   text-align: center;
+  margin-top: 6%;
 }
 .title h2 {
   font-size: var(--fs-2);
@@ -321,7 +327,7 @@ header .sticky {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 2rem;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .idk {

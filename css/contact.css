@@ -187,7 +187,6 @@ header.sticky {
 
 .box {
   background-color: var(--white);
-  border: 1px solid rgb(76, 101, 160);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
