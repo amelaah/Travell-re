@@ -167,7 +167,7 @@
   text-align: right;
   color: var(--black);
   margin-top: 12px;
-  left: 300px;
+  left: 250px;
 }
 
 .flights-content {
@@ -194,4 +194,22 @@
   display: flex;
   justify-content: space-evenly;
  
+}
+
+.flights a {
+  color: var(--gunmetal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  padding: 10px 22px;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+
+.flights a:hover {
+  background: transparent;
+  color: var(--dd-sage);
+  box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3);
+  border-radius: 4px;
+  text-decoration: none;
 }
