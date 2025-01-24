@@ -322,6 +322,9 @@ header .sticky {
   margin-top: 5rem;
 } */
 
+
+/* packages */
+
 .package-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
