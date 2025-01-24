@@ -121,3 +121,35 @@
    cursor: pointer;
    display: none;
  }
+ section{
+  padding: 80px 10%;
+
+ }
+ .flights{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(1, 1f);
+  align-items: center;
+ }
+
+ .flights-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+ }
+
+ .o-box1{
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.455, 0.05, 0.55, 0.95);
+  will-change: filter;
+  cursor: pointer;
+ }
+  .foto img{
+  width: 50%;
+  height: 50vh;
+  border-radius: 10px;
+ }
