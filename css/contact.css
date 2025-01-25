@@ -91,7 +91,9 @@ html {
 body {
   /* background-color: var(--d-sage); */
   height: 200vh;
+  overflow: hidden;
 }
+
 header {
   position: fixed;
   top: 0;
