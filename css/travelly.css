@@ -187,6 +187,7 @@ section {
   line-height: 38px;
   margin-bottom: 35px;
 } */
+
 .home-btn {
   display: inline-block;
   font-size: 16px;
@@ -216,10 +217,13 @@ header .sticky {
   color: var(--black);
 }
 
+/* destination */
+
 .text {
   text-align: center;
   margin-top: 6%;
 }
+
 .text h2 {
   margin-top: 50px;
   font-size: var(--fs-2);
@@ -262,6 +266,7 @@ header .sticky {
   align-items: center;
   text-align: center;
   margin-top: 5rem;
+  
 }
 
 .container-box {
@@ -272,7 +277,7 @@ header .sticky {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 1s ease 0;
+  /* transition: all 0s ease-out; */
   cursor: pointer;
 }
 
@@ -302,6 +307,7 @@ header .sticky {
   /* box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%); */
   border: 1px solid transparent;
   transform: translateY(-3px);
+  /* transition: all 0s ease-out; */
 }
 
 .title {
@@ -321,7 +327,6 @@ header .sticky {
   text-align: center;
   margin-top: 5rem;
 } */
-
 
 /* packages */
 
@@ -375,6 +380,7 @@ header .sticky {
 .location p {
   font-size: 15px;
   color: var(--jet);
+  font-family: var(--ff-poppins);
 }
 
 .destination a {
