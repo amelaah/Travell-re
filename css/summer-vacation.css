@@ -154,13 +154,20 @@ section {
   width: 100%;
 }
 
-.summer-box a{
+.summer-box a {
   width: 100%;
 }
 
-.box1{
+.box1 {
   margin-bottom: 5%;
 }
+
+.box1:hover {
+  filter: brightness(100%);
+  transform: scale(1.04);
+  transition: all 0.2s ease-in-out;
+}
+
 .kutia {
   position: relative;
   transition: all 0.3s cubic-bezier(0.455, 0.05, 0.55, 0.95);

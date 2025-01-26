@@ -208,7 +208,7 @@
 .flights a:hover {
   background: transparent;
   color: var(--dd-sage);
-  box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3);
+  /* box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3); */
   border-radius: 4px;
   text-decoration: none;
 }
