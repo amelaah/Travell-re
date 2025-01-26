@@ -135,9 +135,9 @@ section {
 }
 
 .summer-container {
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem; */
+  grid-gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -160,6 +160,7 @@ section {
 
 .box1 {
   margin-bottom: 5%;
+  
 }
 
 .box1:hover {
@@ -173,6 +174,9 @@ section {
   transition: all 0.3s cubic-bezier(0.455, 0.05, 0.55, 0.95);
   will-change: filter;
   cursor: pointer;
+  margin-bottom: 40px;
+  width: 100%;
+
 }
 
 .kutia img {
@@ -182,36 +186,55 @@ section {
 }
 
 .kutia h3 {
-  display: flex;
-  justify-self: flex-end;
-  /* position: absolute; */
-  font-size: 25px;
+  position: absolute;
+  font-size: 30px;
   font-weight: var(--fw-600);
   font-family: var(--ff-poppins);
   text-align: right;
   color: var(--black);
   margin-top: 12px;
-  /* left: 158px; */
+  left: 250px;
 }
 
 .kutia-content {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
+  justify-content: space-evenly;
+  /* padding-top: 10px; */
 }
 
 .location h4 {
   font-size: 24px;
   font-weight: var(--fw-600);
-  margin-top: -50px;
-  color: var(--black);
+  margin-top: -30px;
   font-family: var(--ff-poppins);
 }
 
 .location p {
+  font-family: var(--ff-poppins);
   font-size: 15px;
   color: var(--jet);
-  font-family: var(--ff-poppins);
 }
+.summer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.summer-vacation a {
+  color: var(--gunmetal);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  padding: 10px 22px;
+  border-radius: 4px;
+  transition: ease 0.4s;
+}
+
+.summer-vacation a:hover {
+  background: transparent;
+  color: var(--dd-sage);
+  box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
