@@ -53,11 +53,7 @@
   li {
     list-style: none;
   }
-.info li {
-  list-style: decimal;
-}
 
-  
   a {
     text-decoration: none;
     color: var(--white);
@@ -67,7 +63,7 @@
   }
   body {
     height: 200vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   header {
@@ -129,44 +125,3 @@
     padding: 100px 10%;
   
    }
-   .food-container{
-    display: flex;
-    justify-content: space-around;
-   }
-
-  .food {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    display: grid;
-    grid-template-columns: repeat(1, 1f);
-    align-items: center;
-   }
-
-   .info {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 2rem;
-    align-items: center;
-    /* margin-top: 2rem; */
-   }
-   .box {
-    position: relative;
-    transition: all 0.3s cubic-bezier(0.455, 0.05, 0.55, 0.95);
-    will-change: filter;
-    cursor: pointer;
-    margin-bottom: 100px;
-    width: 100%;
-   }
-   .logo img {
-    width: 70%;
-    height: 30vh;
-    border-radius: 10px;
-   }
-   .info{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-  }
