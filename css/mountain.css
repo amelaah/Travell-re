@@ -78,6 +78,7 @@ header {
   background: transparent;
   padding: 30px 18%;
   transition: ease 0.4s;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 header.sticky {
@@ -202,6 +203,7 @@ section {
 .mountain-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 3%;
 }
 
 .mountain a {

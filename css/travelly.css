@@ -314,6 +314,8 @@ header.sticky {
   /* transition: all 0s ease-out; */
 }
 
+/* packages */
+
 .title {
   text-align: center;
   margin-top: 6%;
@@ -323,16 +325,6 @@ header.sticky {
   font-family: var(--ff-poppins);
   line-height: 1.2;
 }
-/* .rows{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 2rem;
-  align-items: center;
-  text-align: center;
-  margin-top: 5rem;
-} */
-
-/* packages */
 
 .package-content {
   display: grid;

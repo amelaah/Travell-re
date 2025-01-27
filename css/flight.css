@@ -78,6 +78,7 @@ header {
   background: transparent;
   padding: 30px 18%;
   transition: ease 0.4s;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 header.sticky {
@@ -133,6 +134,17 @@ header.sticky {
 
 section {
   padding: 80px 10%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 4%;
+}
+.title h2 {
+  color: var(--oxford-blue);
+  font-size: 37px;
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
 }
 
 .flights {
