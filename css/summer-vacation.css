@@ -173,13 +173,13 @@ section {
   will-change: filter;
   cursor: pointer;
   margin-bottom: 50px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
 }
 
-.summer-box a {
+/* .summer-box a {
   width: 100%;
-}
+} */
 
 .box1 {
   margin-bottom: 5%;
@@ -218,8 +218,8 @@ section {
 }
 
 .kutia-content {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   /* padding-top: 10px; */
@@ -241,9 +241,15 @@ section {
   color: var(--jet);
 }
 
-.summer-container {
-  display: flex;
-  justify-content: space-evenly;
+/* .summer-container {
+   display: flex; 
+   justify-content: space-evenly;
+}  */
+
+@media(max-width:800px){
+  .summer-container{
+    display: grid;
+  }
 }
 
 .summer-vacation a {

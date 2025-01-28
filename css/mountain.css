@@ -136,13 +136,20 @@ section {
   align-items: center;
 }
 
-.mountain-content {
+.box1 .box2{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 2rem;
   align-items: center;
   margin-top: 2rem;
 }
+/* .box2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+} */
 
 .trip1 {
   position: relative;
@@ -222,4 +229,9 @@ section {
   /* box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3); */
   border-radius: 4px;
   text-decoration: none;
+}
+@media(max-width: 990px){
+  .mountain-container{
+    display: grid;
+  }
 }
