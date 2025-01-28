@@ -136,6 +136,7 @@ section {
   padding: 80px 10%;
 }
 
+
 .title {
   text-align: center;
   margin-top: 4%;
@@ -146,7 +147,7 @@ section {
   font-family: var(--ff-poppins);
   line-height: 1.2;
 }
-
+/* ............................................................................................................................................ */
 .flights {
   position: relative;
   width: 100%;
@@ -162,6 +163,8 @@ section {
   grid-gap: 2rem;
   align-items: center;
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .o-box1 {
@@ -241,4 +244,9 @@ section {
   /* box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3); */
   border-radius: 4px;
   text-decoration: none;
+}
+@media(max-width:800px){
+  .flights-container{
+    display: grid;
+  }
 }

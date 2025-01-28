@@ -126,7 +126,7 @@ header.sticky {
 section {
   padding: 80px 10%;
 }
-
+/* .......................................................................................................................................... */
 .mountain {
   position: relative;
   width: 100%;
@@ -143,13 +143,7 @@ section {
   align-items: center;
   margin-top: 2rem;
 }
-/* .box2{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 2rem;
-  align-items: center;
-  margin-top: 2rem;
-} */
+
 
 .trip1 {
   position: relative;
@@ -188,7 +182,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 .location h4 {
