@@ -21,25 +21,26 @@
       </header>
       <!-- login form -->
 <!-- <section class="booking" id="booking"> -->
-  <div class="login" id="login">
-    <div class="form-box"> 
-      <div class="login-container" id="login">
-        <div class="top">
-          <span>Don't have an account? <a href="book.html" onclick="register()">Sign Up</a>
-          </span>
-          <h1>Login</h1>
-        </div>
-        <div class="input-box">
-            <input type="email" class="input-field" placeholder="Username or Email" />
-            <img src="/images/user.png" alt="">
-         </div>
-         <div class="input-box">
-            <input type="password" class="input-field" placeholder="Password" />  
-            <img src="/images/lock.png" alt="">       
-         </div>
-         <div class="input-box">
-            <input type="submit" class="submit" value="Register" />
-         </div>
+    <div class="login" id="login">
+      <div class="form-box"> 
+        <div class="login-container" id="login">
+          <div class="top">
+              <span>Don't have an account? <a href="book.html" onclick="register()">Sign Up</a>
+              </span>
+                <h1>Login</h1>
+          </div>
+          <form action="login.php" method="post">
+            <div class="input-box">
+                <input type="email" class="input-field" placeholder="Username or Email" />
+                <img src="/images/user.png" alt="">
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password" />  
+                <img src="/images/lock.png" alt="">       
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register" />
+            </div>
             <div class="two-col">
               <div class="one">
                 <input type="checkbox" id="login-check" />
@@ -49,9 +50,10 @@
                <label><a href="#">Forgot password?</a></label>
               </div>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
-  </div>
+    </div>
+  </form>
 </body>
 </html>
