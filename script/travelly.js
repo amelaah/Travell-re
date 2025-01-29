@@ -1,8 +1,12 @@
+// navbar design kur scroll ma poshte
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+// responsive navbar
 
 const toggleBtn = document.querySelector(".toggle_btn");
 const toggleBtnIcon = document.querySelector(".toggle_btn i");
@@ -13,6 +17,4 @@ toggleBtn.onclick = function () {
   const isOpen = dropDownMenu.classList.contains("open");
 
   toggleBtnIcon.classList = isOpen;
-  // ? /images/menu.png
-  // : /images/menu.png
 };
