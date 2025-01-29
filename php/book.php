@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['previous_page'])) {
+    $_SESSION['previous_page'] = $_SERVER['REQUEST_URI'];
+}
 include 'database.php';
 
 
@@ -12,6 +16,15 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         echo "Registration successful!";
+
+        if (isset($_SESSION['previous_page'])) {
+            header("Location: " . $_SESSION['previous_page']);
+            exit();
+           
+        } else {
+            header("Location: welcome.php");
+            exit();
+        }
     }    else  {
         echo "Error:" . $conn->error;
     }
