@@ -389,7 +389,8 @@ header.sticky {
   color: var(--white);
   font-size: 1.5rem;
   cursor: pointer;
-  display: none;
+  display: flex;
+  justify-self: flex-end;
   width: 50%;
 }
 
