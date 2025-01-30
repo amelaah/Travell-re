@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             setcookie("user_email", $email, time() + (86400 * 30), "/");
             setcookie("user_password", $password, time() + (86400 * 30), "/");
 
-            header("Location: dashboard.php");
+            header("Location: travelly.html");
             exit();
          } else {
             echo "Incorrect password!";

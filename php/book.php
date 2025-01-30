@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
             exit();
            
         } else {
-            header("Location: welcome.php");
+            header("Location: travelly.html");
             exit();
         }
     }    else  {
