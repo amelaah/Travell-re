@@ -414,7 +414,7 @@ header.sticky {
 }
 
 .dropdown_menu.open {
-  height: 240px;
+  height: 0px;
 }
 
 /* responsive nav-bar */
@@ -432,7 +432,7 @@ header.sticky {
   .sticky .navbar {
     display: none;
   }
-
+  
   .sticky .toggle_btn {
     display: block;
   }
