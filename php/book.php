@@ -17,6 +17,13 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
     if ($conn->query($sql) === TRUE) {
         echo "Registration successful!";
 
+        if (isset($_POST['remember_me'])) {
+            
+            setcookie("user_email", $email, time() + (30 * 24 * 60 * 60), "/"); 
+           
+            
+        }
+
         if (isset($_SESSION['previous_page'])) {
             header("Location: " . $_SESSION['previous_page']);
             exit();
