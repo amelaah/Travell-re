@@ -31,11 +31,11 @@
           </div>
           <form action="login.php" method="post">
             <div class="input-box">
-                <input type="email" class="input-field" placeholder="Username or Email" />
+                <input type="email" class="input-field" placeholder="Username or Email" name="email"/>
                 <img src="/images/user.png" alt="">
             </div>
             <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password" />  
+                <input type="password" class="input-field" placeholder="Password" name="password"/>  
                 <img src="/images/lock.png" alt="">       
             </div>
             <div class="input-box">
@@ -43,7 +43,7 @@
             </div>
             <div class="two-col">
               <div class="one">
-                <input type="checkbox" id="login-check" />
+                <input type="checkbox" id="login-check" name="remember_me"/>
                 <label for="login-check">Remember Me</label>
               </div>
               <div class="two">
