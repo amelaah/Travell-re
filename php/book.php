@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['previous_page'])) {
-    $_SESSION['previous_page'] = $_SERVER['REQUEST_URI'];
-}
+header("Cache-Control: no-cache, no-store, must-revalidate"); 
+header("Pragma: no-cache"); 
+header("Expires: 0");
 
 include 'database.php';
 
