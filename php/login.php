@@ -5,16 +5,21 @@ include "database.php";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
    $email = $_POST['email'];
    $password = $_POST['password'];
-  
 
-   $result = $conn->query("SELECT * FROM users WHERE email = '$email'");
+   $stmt = $conn->prepare("SELECT id, first_name, password FROM users WHERE email = ?");
+   $stmt->bind_param("s", $email); 
+   $stmt->execute();
+   $stmt->store_result();
 
-   if ($result->num_rows > 0){
-      $row = $result->fetch_assoc();
+   if ($stmt->num_rows > 0) {
+   
+      $stmt->bind_result($user_id, $first_name, $hashed_password);
+      $stmt->fetch();
 
-      if (password_verify($password, $row['password'])) {
-         $_SESSION['user_id'] = $row['id'];
-         $_SESSION['first_name'] = $row['first_name'];
+
+      if (password_verify($password, $hashed_password)) {
+         $_SESSION['user_id'] = $user_id;
+         $_SESSION['first_name'] = $first_name;
 
          if (!empty($_POST['remember_me'])) {
             setcookie("user_email", $email, time() + (86400 * 30), "/");
@@ -29,7 +34,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       } else {
          echo "No user found with that e-mail!";
       }
-   
+
+   $stmt->close();
    $conn->close();
 }
 ?>

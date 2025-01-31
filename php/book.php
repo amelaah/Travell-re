@@ -1,8 +1,10 @@
 <?php
 session_start();
+
 if (!isset($_SESSION['previous_page'])) {
     $_SESSION['previous_page'] = $_SERVER['REQUEST_URI'];
 }
+
 include 'database.php';
 
 
@@ -12,17 +14,18 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
     $email= $_POST['email'];
     $password= password_hash($_POST['password'],PASSWORD_DEFAULT); 
 
-    $sql =  "INSERT INTO users (first_name, last_name, email, password) VALUES ('$first_name','$last_name','$email','$password')";
+    $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("ssss", $first_name, $last_name, $email, $password);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         echo "Registration successful!";
 
         if (isset($_POST['remember_me'])) {
-            
-            setcookie("user_email", $email, time() + (30 * 24 * 60 * 60), "/"); 
            
-            
+            setcookie("user_email", $email, time() + (30 * 24 * 60 * 60), "/", "", true, true);
         }
+
+    
 
         if (isset($_SESSION['previous_page'])) {
             header("Location: " . $_SESSION['previous_page']);
@@ -35,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
     }    else  {
         echo "Error:" . $conn->error;
     }
-
+ $stmt->close();
  $conn->close();
 }
 ?>
