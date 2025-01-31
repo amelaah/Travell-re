@@ -29,21 +29,17 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
         if (isset($_POST['remember_me'])) {
            
             setcookie("user_email", $email, time() + (30 * 24 * 60 * 60), "/", "", true, true);
-        }
-
-    
-
-        if (isset($_SESSION['previous_page'])) {
-            header("Location: " . $_SESSION['previous_page']);
-            exit();
-           
-        } else {
+          
+        } 
             header("Location: travelly.html");
             exit();
-        }
+        
     }    else  {
+        
         echo "Error:" . $conn->error;
     }
+
+
  $stmt->close();
  $conn->close();
 }
