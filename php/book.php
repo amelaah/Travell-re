@@ -20,6 +20,12 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
     if ($stmt->execute()) {
         echo "Registration successful!";
 
+        $_SESSION['user_id'] = $conn->insert_id; 
+        $_SESSION['first_name'] = $first_name;
+
+        
+        setcookie('is_logged_in', 'true', time() + (86400 * 30), '/');
+
         if (isset($_POST['remember_me'])) {
            
             setcookie("user_email", $email, time() + (30 * 24 * 60 * 60), "/", "", true, true);

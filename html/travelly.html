@@ -30,7 +30,17 @@
         <li><a href="#package">Packages</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
+<!-- sign out button -->
+        <li id="sign-out-button" style="display:none;">
+          <form method="POST" action="">
+            <button type="submit">Sign Out</button>
+          </form>
+        </li>
+     
+        <li id="sign-up-button">
         <button><a href="book.html">Sign Up</a></button>
+      </li>
+
       </ul>
 
       <!-- toggle btn -->
@@ -240,5 +250,18 @@
 
     <!-- javascript ------------------------------------------------------------------------------------------------ -->
     <script src="/script/travelly.js"></script>
+    <script>
+      // Ca osht user in
+      window.onload = function() {
+         
+          if (document.cookie.indexOf('is_logged_in=true') !== -1) {
+              document.getElementById('sign-out-button').style.display = 'block';  
+              document.getElementById('sign-up-button').style.display = 'none';   
+          } else {
+              document.getElementById('sign-out-button').style.display = 'none';  
+              document.getElementById('sign-up-button').style.display = 'block';  
+          }
+      };
+      </script>
   </body>
 </html>

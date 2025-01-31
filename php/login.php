@@ -26,6 +26,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
          $_SESSION['user_id'] = $user_id;
          $_SESSION['first_name'] = $first_name;
 
+          setcookie('is_logged_in', 'true', time() + (86400 * 30), '/');
+
          if (!empty($_POST['remember_me'])) {
             setcookie("user_email", $email, time() + (86400 * 30), "/");
             setcookie("user_password", $password, time() + (86400 * 30), "/");
