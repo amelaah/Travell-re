@@ -30,25 +30,28 @@
         <li><a href="#package">Packages</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-<!-- sign out button -->
-        <li id="sign-out-button" style="display:none;">
-          <form method="POST" action="">
+
+        <!-- sign out button -->
+
+        <li id="sign-out-button" style="display: none">
+          <form action="signOut.php" method="post">
             <button type="submit">Sign Out</button>
           </form>
         </li>
-     
-        <li id="sign-up-button">
-        <button><a href="book.html">Sign Up</a></button>
-      </li>
 
+        <li id="sign-up-button">
+          <button><a href="book.html">Sign Up</a></button>
+        </li>
       </ul>
 
       <!-- toggle btn -->
+
       <div class="toggle_btn">
         <img src="/images/menu.png" alt="" />
       </div>
 
       <!-- responsive navbar -->
+
       <div class="dropdown_menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#destination">Destination</a></li>
@@ -252,17 +255,15 @@
     <script src="/script/travelly.js"></script>
     <!-- per qatt sig out button -->
     <script>
-      
-      window.onload = function() {
-         
-          if (document.cookie.indexOf('is_logged_in=true') !== -1) {
-              document.getElementById('sign-out-button').style.display = 'block';  
-              document.getElementById('sign-up-button').style.display = 'none';   
-          } else {
-              document.getElementById('sign-out-button').style.display = 'none';  
-              document.getElementById('sign-up-button').style.display = 'block';  
-          }
+      window.onload = function () {
+        if (document.cookie.indexOf("is_logged_in=true") !== -1) {
+          document.getElementById("sign-out-button").style.display = "block";
+          document.getElementById("sign-up-button").style.display = "none";
+        } else {
+          document.getElementById("sign-out-button").style.display = "none";
+          document.getElementById("sign-up-button").style.display = "block";
+        }
       };
-      </script>
+    </script>
   </body>
 </html>
