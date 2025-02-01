@@ -134,6 +134,8 @@ header.sticky {
   cursor: pointer;
   display: none;
 }
+
+/* ....................................................................................................................... */
 .login {
   position: relative;
   width: 100%;
@@ -254,7 +256,7 @@ h1 {
   gap: 5px;
 }
 
-/* dropdown menu - responsive ------------------------------------------------------------------- */
+/* dropdown menu - responsive ------------------------------------------------------------------------------------------- */
 
 .toggle_btn img {
   font-size: 1.5rem;
@@ -265,15 +267,17 @@ h1 {
 }
 
 .dropdown_menu {
+  display: none;
+  background: var(--l-blue);
   position: absolute;
   right: 1rem;
   top: 60px;
   width: 300px;
-  background: rgba(255, 255, 255, 0.5);
-  filter: opacity(50%);
   border-radius: 10px;
   overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .dropdown_menu li {
@@ -295,12 +299,14 @@ h1 {
 }
 
 .dropdown_menu.open {
-  height: 0px;
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* responsive nav-bar */
 
-@media (min-width: 990px) {
+@media (min-width: 1068px) {
   .toggle_btn {
     display: none;
   }
@@ -309,7 +315,7 @@ h1 {
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1068px) {
   .sticky .navbar {
     display: none;
   }
@@ -333,5 +339,14 @@ h1 {
   .toggle_btn {
     display: block;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .form-box {
+    width: 70%;
+  }
+  .input-field, .submit, .two-col label a{
+    font-size: 13px;
   }
 }

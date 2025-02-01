@@ -326,7 +326,7 @@ section {
   .navbar .toggle_btn img {
     display: block;
   }
-  */ .dropdown_menu {
+  .dropdown_menu {
     display: block;
   }
 }

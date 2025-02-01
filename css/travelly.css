@@ -142,14 +142,15 @@ header {
   border-radius: 4px;
 }
 
-@media(max-width: 990px){
-  .navbar a{
+@media (max-width: 990px) {
+  .navbar a {
     display: none;
   }
   .toggle_btn {
     display: block;
   }
 }
+
 #menu-icon {
   color: var(--dd-sage);
   font-size: 35px;
