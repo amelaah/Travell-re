@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
-</head>
-<body>
-   <!-- navbar ------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <!-- navbar ------------------------------------------------------------------------------------------------------->
     <header class="sticky">
-        <a href="/html/travelly.html" class="logo">travelly</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-  
-        <ul class="navbar">
-          <li><a href="travelly.html#home">Home</a></li>
-          <li><a href="travelly.html#destination">Destination</a></li>
-          <li><a href="travelly.html#package">Package</a></li>
-          <li><a href="travelly.html#about">About Us</a></li>
-          <li><a href="/html/contact.html">Contact Us</a></li>
-        </ul>
+      <a href="/html/travelly.html" class="logo">travelly</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-        <!-- toggle btn -->
+      <ul class="navbar">
+        <li><a href="travelly.html#home">Home</a></li>
+        <li><a href="travelly.html#destination">Destination</a></li>
+        <li><a href="travelly.html#package">Package</a></li>
+        <li><a href="travelly.html#about">About Us</a></li>
+        <li><a href="/html/contact.html">Contact Us</a></li>
+      </ul>
+
+      <!-- toggle btn -->
       <div class="toggle_btn">
         <img src="/images/menu.png" alt="" />
       </div>
 
       <!--responsive navbar -->
       <div class="dropdown_menu">
-          <li><a href="travelly.html#home">Home</a></li>
-          <li><a href="travelly.html#destination">Destination</a></li>
-          <li><a href="travelly.html#package">Package</a></li>
-          <li><a href="travelly.html#about">About Us</a></li>
-          <li><a href="/html/contact.html">Contact Us</a></li>
+        <li><a href="travelly.html#home">Home</a></li>
+        <li><a href="travelly.html#destination">Destination</a></li>
+        <li><a href="travelly.html#package">Package</a></li>
+        <li><a href="travelly.html#about">About Us</a></li>
+        <li><a href="/html/contact.html">Contact Us</a></li>
       </div>
-      </header>
-      <!-- login form  ------------------------------------------------------------------------------------------------------>
+    </header>
+    <!-- login form  ------------------------------------------------------------------------------------------------------>
     <div class="login" id="login">
-      <div class="form-box"> 
-        <div class="login-container" >
+      <div class="form-box">
+        <div class="login-container">
           <div class="top">
-              <span>Don't have an account? <a href="book.html" onclick="register()">Sign Up</a>
-              </span>
-                <h1>Login</h1>
+            <span
+              >Don't have an account?
+              <a href="book.html" onclick="register()">Sign Up</a>
+            </span>
+            <h1>Login</h1>
           </div>
           <form action="login.php" method="post">
             <div class="input-box">
-                <input type="email" class="input-field" placeholder="Username or Email" name="email"/>
-                <img src="/images/user.png" alt="">
+              <input
+                type="email"
+                class="input-field"
+                placeholder="Username or Email"
+                name="email"
+              />
+              <img src="/images/user.png" alt="" />
             </div>
             <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password" name="password"/>  
-                <img src="/images/lock.png" alt="">       
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Password"
+                name="password"
+              />
+              <img src="/images/lock.png" alt="" />
             </div>
             <div class="input-box">
-                <input type="submit" class="submit" value="Register" />
+              <input type="submit" class="submit" value="Register" />
             </div>
             <div class="two-col">
               <div class="one">
-                <input type="checkbox" id="login-check" name="remember_me"/>
+                <input type="checkbox" id="login-check" name="remember_me" />
                 <label for="login-check">Remember Me</label>
               </div>
               <div class="two">
-               <label><a href="#">Forgot password?</a></label>
+                <label><a href="#">Forgot password?</a></label>
               </div>
             </div>
           </form>
@@ -69,5 +81,6 @@
         </div>
       </div>
     </div>
-<script src="/script/travelly.js"></script></body>
+    <script src="/script/travelly.js"></script>
+  </body>
 </html>

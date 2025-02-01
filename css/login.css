@@ -121,7 +121,7 @@ header.sticky {
   .toggle_btn {
     display: block;
   }
-  .sticky{
+  .sticky {
     background: rgba(255, 255, 255, 0.718);
     filter: opacity(100%);
   }
@@ -317,7 +317,7 @@ h1 {
   .navbar .toggle_btn img {
     display: block;
   }
-  */ .dropdown_menu {
+  .dropdown_menu {
     display: block;
   }
 }
