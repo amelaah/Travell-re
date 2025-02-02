@@ -180,7 +180,7 @@ section {
   transition: all 0.3s cubic-bezier(0.455, 0.05, 0.55, 0.95);
   will-change: filter;
   cursor: pointer;
-  /* margin-bottom: 100px; */
+  margin-bottom: 30%;
   width: 100%;
 }
 
