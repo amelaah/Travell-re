@@ -172,6 +172,7 @@ section {
   cursor: pointer;
   margin-bottom: 100px;
   width: 100%;
+  flex-shrink: 0;
 }
 .logo img {
   width: 70%;
@@ -184,16 +185,19 @@ section {
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
+  flex-shrink: 0;
 }
 
 /* dropdown menu - responsive ------------------------------------------------------------------- */
 
 .toggle_btn img {
-  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
   justify-self: flex-end;
-  width: 7%;
 }
 
 .dropdown_menu {
@@ -236,7 +240,7 @@ section {
 
 /* responsive nav-bar */
 
-@media (min-width: 1234px) {
+@media (min-width: 1365px) {
   .toggle_btn {
     display: none;
   }
@@ -245,7 +249,7 @@ section {
   }
 }
 
-@media (max-width: 1234px) {
+@media (max-width: 1365px) {
   .sticky .navbar {
     display: none;
   }
@@ -261,6 +265,7 @@ section {
 
 @media (max-width: 1154px) {
   .box ol {
+    width: 100%;
     font-size: 12px;
     font-family: var(--ff-montserrat);
   }
@@ -281,11 +286,11 @@ section {
   }
 }
 
-@media (max-width: 790px) {
+/* @media (max-width: 790px) {
   .food {
     display: grid;
   }
-}
+} */
 
 @media (max-width: 720px) {
   .dropdown_menu {
@@ -296,8 +301,8 @@ section {
 
 @media (max-width: 720px) {
   .toggle_btn {
-    display: block;
-    max-width: 100%;
+    width: 25px;
+    height: 25px;
   }
   .food {
     display: grid;

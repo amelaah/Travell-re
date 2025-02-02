@@ -124,7 +124,7 @@ header.sticky {
   border-radius: 4px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1365px) {
   .navbar a {
     display: none;
   }
@@ -262,11 +262,13 @@ section {
 /* dropdown menu - responsive ------------------------------------------------------------------- */
 
 .toggle_btn img {
-  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
   justify-self: flex-end;
-  width: 7%;
 }
 
 .dropdown_menu {
@@ -309,7 +311,7 @@ section {
 
 /* responsive nav-bar */
 
-@media (min-width: 990px) {
+@media (min-width: 1365px) {
   .toggle_btn {
     display: none;
   }
@@ -318,7 +320,7 @@ section {
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1365px) {
   .sticky .navbar {
     display: none;
   }
@@ -340,7 +342,7 @@ section {
 
 @media (max-width: 720px) {
   .toggle_btn {
-    display: block;
-    max-width: 100%;
+    width: 25px;
+    height: 25px;
   }
 }

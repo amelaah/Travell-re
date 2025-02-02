@@ -41,3 +41,8 @@ document.addEventListener("click", (event) => {
     dropDownMenu.style.display = "none"; // Hide menu
   }
 });
+// document.addEventListener("click", function(event) {
+//   if (!dropdown.contains(event.target) && !toggleBtn.contains(event.target)) {
+//       dropdown.classList.remove("active");
+//   }
+// });

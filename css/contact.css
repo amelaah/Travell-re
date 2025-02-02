@@ -112,7 +112,7 @@ header {
 }
 
 header.sticky {
-  background: transparent;
+  background: var(--l-blue);
   padding: 10px 18%;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
@@ -123,6 +123,10 @@ header.sticky {
   letter-spacing: 1px;
   color: var(--l-blue);
   font-family: var(--ff-montserrat);
+}
+
+.sticky .logo {
+  color: var(--gunmetal);
 }
 
 .navbar {
@@ -153,10 +157,6 @@ header.sticky {
   .toggle_btn {
     display: block;
   }
-  /* .sticky {
-    background: rgba(255, 255, 255, 0.718);
-    filter: opacity(100%);
-  } */
 }
 
 #menu-icon {
@@ -184,6 +184,7 @@ header.sticky {
   font-weight: 600;
   color: var(--l-blue);
   cursor: default;
+  flex-shrink: 0;
 }
 
 .contact-container {
@@ -255,11 +256,13 @@ header.sticky {
 /* dropdown menu - responsive ------------------------------------------------------------------- */
 
 .toggle_btn img {
-  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
   justify-self: flex-end;
-  width: 7%;
 }
 
 .dropdown_menu {
@@ -312,11 +315,11 @@ header.sticky {
 }
 
 @media (max-width: 1077px) {
-  .sticky .navbar {
+  .navbar {
     display: none;
   }
   .help h2 {
-    font-size: 45px;
+    font-size: 50px;
     font-family: var(--ff-montserrat);
   }
   .navbar .toggle_btn img {
@@ -332,21 +335,27 @@ header.sticky {
     color: var(--deti);
   }
   .help h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: var(--ff-montserrat);
   }
 }
 
-/* @media(max-width:880px){
-  .box{
-    display: block;
+@media (max-width: 720px) {
+  .help h2 {
+    font-size: 50px;
+    font-family: var(--ff-montserrat);
   }
-  .box-img img{
-    width: ?
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
   }
-} */
+}
 
 @media (max-width: 684px) {
+  .help h2{
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
   .contact-container {
     display: grid;
   }
@@ -372,20 +381,25 @@ header.sticky {
   }
 }
 
+
 @media (max-width: 720px) {
-  .help h2 {
-    font-size: 35px;
-    font-family: var(--ff-montserrat);
-  }
-  .dropdown_menu {
-    left: 2rem;
-    width: unset;
+  .toggle-btn {
+    width: 25px;
+    height: 25px;
   }
 }
 
-@media (max-width: 720px) {
-  .toggle_btn {
-    display: block;
-    max-width: 100%;
+
+@media(max-width:591px){
+  .help h2 {
+    font-size: 40px;
+    font-family: var(--ff-montserrat);
+  }
+}
+
+@media(max-width:515px){
+  .help h2 {
+    font-size: 35px;
+    font-family: var(--ff-montserrat);
   }
 }

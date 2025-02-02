@@ -114,17 +114,17 @@ header.sticky {
   border-radius: 4px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1365px) {
   .navbar a {
     display: none;
   }
   .toggle_btn {
     display: block;
   }
-  .sticky {
+  /* .sticky {
     background: rgba(255, 255, 255, 0.718);
     filter: opacity(100%);
-  }
+  } */
 }
 
 #menu-icon {
@@ -259,16 +259,19 @@ h1 {
 /* dropdown menu - responsive ------------------------------------------------------------------------------------------- */
 
 .toggle_btn img {
-  font-size: 1.5rem;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
-  justify-self: flex-end;
-  width: 7%;
 }
 
 .dropdown_menu {
   display: none;
-  background: var(--l-blue);
+  background: transparent;
+  box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3);
+  border-radius: 4px;
   position: absolute;
   right: 1rem;
   top: 60px;
@@ -306,7 +309,7 @@ h1 {
 
 /* responsive nav-bar */
 
-@media (min-width: 1068px) {
+@media (min-width: 1365px) {
   .toggle_btn {
     display: none;
   }
@@ -315,7 +318,7 @@ h1 {
   }
 }
 
-@media (max-width: 1068px) {
+@media (max-width: 1365px) {
   .sticky .navbar {
     display: none;
   }
@@ -337,8 +340,8 @@ h1 {
 
 @media (max-width: 720px) {
   .toggle_btn {
-    display: block;
-    max-width: 100%;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -346,7 +349,9 @@ h1 {
   .form-box {
     width: 70%;
   }
-  .input-field, .submit, .two-col label a{
+  .input-field,
+  .submit,
+  .two-col label a {
     font-size: 13px;
   }
 }
