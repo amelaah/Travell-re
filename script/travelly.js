@@ -29,20 +29,4 @@ toggleBtn.onclick = function () {
       toggleBtnIcon.classList.replace("fa-xmark", "fa-bars");
     });
   });
-  //  toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
-
-// e mbyll menu dropdown kur klikon ku do ne screen (jashta saj)
-document.addEventListener("click", (event) => {
-  if (
-    !dropDownMenu.contains(event.target) &&
-    !toggleBtn.contains(event.target)
-  ) {
-    dropDownMenu.style.display = "none"; // Hide menu
-  }
-});
-// document.addEventListener("click", function(event) {
-//   if (!dropdown.contains(event.target) && !toggleBtn.contains(event.target)) {
-//       dropdown.classList.remove("active");
-//   }
-// });

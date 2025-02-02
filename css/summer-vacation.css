@@ -126,7 +126,7 @@ header.sticky {
   border-radius: 4px;
 }
 
-@media (max-width: 1253px) {
+@media (max-width: 1365px) {
   .navbar a {
     display: none;
   }
@@ -142,6 +142,8 @@ header.sticky {
   cursor: pointer;
   display: none;
 }
+
+/* ............................................................................................................................................... */
 section {
   padding: 80px 10%;
 }
@@ -149,14 +151,16 @@ section {
 .title {
   text-align: center;
   margin-top: 4%;
+  flex-shrink: 0;
 }
+
 .title h2 {
   color: var(--pink);
   font-size: 37px;
   font-family: var(--ff-poppins);
   line-height: 1.2;
 }
-/* ............................................................................................................................................... */
+
 .summer-vacation {
   position: relative;
   width: 100%;
@@ -255,11 +259,11 @@ section {
    justify-content: space-evenly;
 }  */
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .summer-container {
     display: grid;
   }
-} */
+}
 
 .summer-vacation a {
   color: var(--gunmetal);
@@ -289,7 +293,6 @@ section {
   cursor: pointer;
   display: flex;
   justify-self: flex-end;
-  flex-shrink: 0;
 }
 
 .dropdown_menu {
@@ -332,7 +335,7 @@ section {
 
 /* responsive nav-bar */
 
-@media (min-width: 1253px) {
+@media (min-width: 1365px) {
   .toggle_btn {
     display: none;
   }
@@ -341,7 +344,7 @@ section {
   }
 }
 
-@media (max-width: 1253px) {
+@media (max-width: 1365px) {
   .sticky .navbar {
     display: none;
   }
@@ -354,22 +357,11 @@ section {
   }
 }
 
-@media (max-width: 1083px) {
-  .summer-container {
-    display: grid;
+@media (max-width: 982px) {
+  .title h2 {
+    margin-top: 5%;
   }
 }
-
-@media (max-width: 1083px) {
-  .summer-container {
-    display: grid;
-  }
-}
-/* @media (max-width: 800px) {
-  .summer-container {
-    display: grid;
-  }
-} */
 
 @media (max-width: 720px) {
   .dropdown_menu {

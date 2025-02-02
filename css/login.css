@@ -265,6 +265,7 @@ h1 {
   font-size: 20px;
   cursor: pointer;
   display: flex;
+  justify-self: flex-end;
 }
 
 .dropdown_menu {

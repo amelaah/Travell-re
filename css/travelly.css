@@ -433,6 +433,10 @@ header.sticky {
   transform: translateY(0);
 }
 
+.dropdown_menu.active {
+  display: block; 
+}
+
 /* responsive nav-bar */
 
 @media (min-width: 1365px) {
