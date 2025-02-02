@@ -31,6 +31,7 @@ toggleBtn.onclick = function () {
     });
   });
 };
+
 // dropdown menu - displayyyss
 document.addEventListener("DOMContentLoaded", () => {
   const dropDownMenu = document.querySelector(".dropdown_menu");
