@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             setcookie("user_email", $email, time() + (86400 * 30), "/");
             setcookie("user_password", $password, time() + (86400 * 30), "/");
          }
-            header("Location: travelly.html");
+            header("Location: /html/travelly.html");
             exit();
          
       } else {
