@@ -70,3 +70,16 @@ document.addEventListener("DOMContentLoaded", () => {
     event.stopPropagation();
   });
 });
+
+// butoni sign out
+window.onload = function () {
+  if (document.cookie.indexOf("is_logged_in=true") !== -1) {
+    //kontrollon se a eshte cookie i vendosur ne 'true'
+    document.getElementById("sign-out-button").style.display = "block"; //kur kycet perdoruesi, e tregon butonin 'sign out', dhe ai 'sign up' fshihet
+    document.getElementById("sign-up-button").style.display = "none";
+  } else {
+    //nese nuk eshte i kycur, cookie nuk gjendet edhe s eshte ne 'true'
+    document.getElementById("sign-out-button").style.display = "none"; //e fshin 'sign out' edhe e show 'sign up'
+    document.getElementById("sign-up-button").style.display = "block";
+  }
+};

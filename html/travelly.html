@@ -253,18 +253,5 @@
 
     <!-- javascript ------------------------------------------------------------------------------------------------ -->
     <script src="/script/travelly.js"></script>
-    <!-- per qatt sig out button -->
-    <script>
-      window.onload = function () {
-        if (document.cookie.indexOf("is_logged_in=true") !== -1) {
-          document.getElementById("sign-out-button").style.display = "block";
-          document.getElementById("sign-up-button").style.display = "none";
-        } else {
-          document.getElementById("sign-out-button").style.display = "none";
-          document.getElementById("sign-up-button").style.display = "block";
-        }
-      };
-      
-    </script>
   </body>
 </html>
