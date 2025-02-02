@@ -31,3 +31,42 @@ toggleBtn.onclick = function () {
     });
   });
 };
+// dropdown menu - displayyyss
+document.addEventListener("DOMContentLoaded", () => {
+  const dropDownMenu = document.querySelector(".dropdown_menu");
+  const toggleBtn = document.querySelector(".toggle_btn");
+
+  dropDownMenu.style.display = "none"; //e fsheh dropdown kur behet faqja load
+
+  //kur klikon ne buton, shfaqet dropdown
+  toggleBtn.addEventListener("click", (event) => {
+    //me display style kontrollon se a eshte dropdown i fshehur apo aktiv
+    if (
+      dropDownMenu.style.display === "none" ||
+      dropDownMenu.classList.contains("active")
+    ) {
+      dropDownMenu.style.display = "block"; // del dropdown
+      dropDownMenu.classList.add("active"); // shton klasen active
+    } else {
+      dropDownMenu.style.display = "none"; // fsheh dropdown
+      dropDownMenu.classList.remove("active"); // hjek klasen active
+    }
+
+    event.stopPropagation(); //ndalon ngjarjen (psh nje klikim) me ndiku ne elementet jashte
+  });
+
+  //e mbyll dropdown kur klikon tjeter kun neper page
+  document.addEventListener("click", (event) => {
+    if (
+      !dropDownMenu.contains(event.target) && // kontrollon mos click eshte jashte dropdown menus
+      !toggleBtn.contains(event.target) //kontrollon mos ajo eshte jashte toggle button
+    ) {
+      dropDownMenu.style.display = "none";
+      dropDownMenu.classList.remove("active");
+    }
+  });
+  //nuk e lejon dropdown mu mshel kur klikon brenda tij
+  dropDownMenu.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+});
