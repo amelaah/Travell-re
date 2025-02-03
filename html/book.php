@@ -4,34 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Now | Sign Up</title>
-    <link rel="stylesheet" href="/css/book.css" />
+    <link rel="stylesheet" href="../css/book.css" />
   </head>
   <body>
     <!-- navbar --------------------------------------------------------------------------------------------->
     <header class="sticky">
-      <a href="travelly.html" class="logo">travelly</a>
+      <a href="../html/travelly.php" class="logo">travelly</a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Package</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Package</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
       </ul>
 
       <!-- toggle btn -->
       <div class="toggle_btn">
-        <img src="/images/menu.png" alt="" />
+        <img src="../images/menu.php" alt="" />
       </div>
 
       <!--responsive navbar -->
       <div class="dropdown_menu">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Package</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Package</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
       </div>
     </header>
 
@@ -42,13 +42,13 @@
         <div class="register-container" id="register">
           <div class="top">
             <span>
-              Have an account? <a href="/html/login.html" id="login-link">Login</a>
+              Have an account? <a href="../html/login.php" id="login-link">Login</a>
             </span>
             <h1>Sign Up</h1>
           </div>
 
           <!-- <form id="register-form"> -->
-          <form action="/php/book.php" method="POST">
+          <form action="../php/book.php" method="POST">
             <div class="two-forms">
               <div class="input-box">
                 <input
@@ -57,7 +57,7 @@
                   placeholder="First Name"
                   name="first_name"
                 />
-                <img src="/images/user.png" alt="" />
+                <img src="../images/user.php" alt="" />
               </div>
               <div class="input-box">
                 <input
@@ -66,7 +66,7 @@
                   placeholder="Last Name"
                   name="last_name"
                 />
-                <img src="/images/user.png" alt="" />
+                <img src="../images/user.php" alt="" />
               </div>
             </div>
             <div class="input-box">
@@ -76,7 +76,7 @@
                 placeholder="Email"
                 name="email"
               />
-              <img src="/images/email1.png" alt="" />
+              <img src="../images/email1.php" alt="" />
             </div>
             <div class="input-box">
               <input
@@ -85,7 +85,7 @@
                 placeholder="Password"
                 name="password"
               />
-              <img src="/images/lock.png" alt="" />
+              <img src="../images/lock.php" alt="" />
             </div>
 
             <button type="submit" class="submit">Register</button>
@@ -100,6 +100,6 @@
         </div>
       </div>
     </div>
-    <script src="/script/travelly.js"></script>
+    <script src="../script/travelly.js"></script>
   </body>
 </html>

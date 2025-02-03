@@ -81,7 +81,7 @@ public function logout() {
     setcookie("user_email", "", time() - 3600, "/");
     setcookie("is_logged_in", "", time() - 3600, "/");
 
-    header("Location: /html/travelly.html");
+    header("Location: ../html/travelly.php");
     exit();
 }
 }

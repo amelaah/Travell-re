@@ -1,5 +1,5 @@
 <?php
 
-header('Location: /html/travelly.html');
+header('Location: ../html/travelly.php');
 exit;
 ?>

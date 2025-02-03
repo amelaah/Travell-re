@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <!-- navbar ------------------------------------------------------------------------------------------------------->
     <header class="sticky">
-      <a href="/html/travelly.html" class="logo">travelly</a>
+      <a href="../html/travelly.php" class="logo">travelly</a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Package</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Package</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
       </ul>
 
       <!-- toggle btn -->
@@ -27,11 +27,11 @@
 
       <!--responsive navbar -->
       <div class="dropdown_menu">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Package</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Package</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
       </div>
     </header>
     <!-- login form  ------------------------------------------------------------------------------------------------------>
@@ -41,11 +41,11 @@
           <div class="top">
             <span
               >Don't have an account?
-              <a href="book.html" onclick="register()">Sign Up</a>
+              <a href="../html/book.php" onclick="register()">Sign Up</a>
             </span>
             <h1>Login</h1>
           </div>
-          <form action="/php/login.php" method="POST">
+          <form action="../php/login.php" method="POST">
             <div class="input-box">
               <input
                 type="email"
@@ -53,7 +53,7 @@
                 placeholder="Username or Email"
                 name="email"
               />
-              <img src="/images/user.png" alt="" />
+              <img src="../images/user.php" alt="" />
             </div>
             <div class="input-box">
               <input
@@ -62,7 +62,7 @@
                 placeholder="Password"
                 name="password"
               />
-              <img src="/images/lock.png" alt="" />
+              <img src="../images/lock.php" alt="" />
             </div>
             <div class="input-box">
               <input type="submit" class="submit" value="Login" />
@@ -78,6 +78,6 @@
         </div>
       </div>
     </div>
-    <script src="/script/travelly.js"></script>
+    <script src="../script/travelly.js"></script>
   </body>
 </html>

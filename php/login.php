@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
    //provon me identifiku userin
    if ($user->login($email, $password, $remember_me)) {
-      header("Location: /html/travelly.html"); //nese hyrja eshte e suksesshme e dergon ne faqen kryesore
+      header("Location: ../html/travelly.php"); //nese hyrja eshte e suksesshme e dergon ne faqen kryesore
       exit();
    } else {
       echo "Incorrect email or password!"; //nese deshton, dergon ket mesazh

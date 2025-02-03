@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"]  == "POST") {
 
     //regjistron perdoruesin
     if ($user->register($first_name, $last_name, $email, $password, $remember_me)) {
-        header("Location: /html/travelly.html");  //nese regjistrimi ka sukses, qojme perdoruesin te faqja kryesore
+        header("Location: ../html/travelly.php");  //nese regjistrimi ka sukses, qojme perdoruesin te faqja kryesore
         exit();
     } else {
         echo "Registration failed!";  //nese regjistrimi deshton, shfaq ket

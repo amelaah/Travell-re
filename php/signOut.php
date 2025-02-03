@@ -13,6 +13,6 @@ header("Expires: 0");
 //  thirr metoden log out
  $user->logout();
 
- header("Location: /html/travelly.html");
+ header("Location: ../html/travelly.php");
 exit();
 ?>
