@@ -283,7 +283,7 @@ section {
 }
 
 .dropdown_menu.open {
-  height: 0px;
+  /* height: 0px; */
   display: block;
   opacity: 1;
   transform: translateY(0);
