@@ -13,10 +13,10 @@
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="travelly.phohome">Home</a></li>
-        <li><a href="travelly.pho#destination">Destination</a></li>
-        <li><a href="travelly.pho#package">Packages</a></li>
-        <li><a href="travelly.pho#about">About Us</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Packages</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
         <li><a href="../html/contact.php">Contact Us</a></li>
         <li><a href="../html/book.php">Sign Up</a></li>
       </ul>
