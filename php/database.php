@@ -6,24 +6,24 @@ $password ="";
 $database ="travelly";
 
 // lidhja me databaz
-$conn =mysqli_connect($servername, $username, $password, $database);
+$conn =new mysqli($servername, $username, $password, $database);
 
 // nese lidhja sosht succecful:(
 if($conn->connect_error){
-    die("Connection failed!:". $conn->error);
+    die("Connection failed!:". $conn->connection_error);
 }
 
-// funksioni per user
-function getAllUsers($conn){
-    $sql = "SELECT * FROM users";
-    $result = $conn->query($sql);
+// // funksioni per user
+// function getAllUsers($conn){
+//     $sql = "SELECT * FROM users";
+//     $result = $conn->query($sql);
 
-    $users = [];
-    while ($row = $result->fetch_assoc()) {
-        $users[] = $row;
-    }
-    return $users;
-}
+//     $users = [];
+//     while ($row = $result->fetch_assoc()) {
+//         $users[] = $row;
+//     }
+//     return $users;
+// }
 
 ?>
 
