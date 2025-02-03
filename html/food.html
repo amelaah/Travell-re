@@ -4,36 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food service</title>
-    <link rel="stylesheet" href="/css/food.css" />
+    <link rel="stylesheet" href="../css/food.css" />
   </head>
   <body>
     <!-- navbar --------------------------------------------------------------------------------------------->
     <header class="sticky">
-      <a href="/html/travelly.html" class="logo">travelly</a>
+      <a href="../html/travelly.php" class="logo">travelly</a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Packages</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
-        <li><a href="/html/book.html">Sign Up</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Packages</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
+        <li><a href="../html/book.php">Sign Up</a></li>
       </ul>
 
       <!-- toggle btn -->
       <div class="toggle_btn">
-        <img src="/images/menu.png" alt="" />
+        <img src="../images/menu.php" alt="" />
       </div>
 
       <!--responsive navbar -->
       <div class="dropdown_menu">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Packages</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
-        <li><a href="/html/book.html">Sign Up</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Packages</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
+        <li><a href="../html/book.php">Sign Up</a></li>
       </div>
     </header>
 
@@ -44,7 +44,7 @@
         <div class="box1">
           <div class="box">
             <div class="logo">
-              <img src="/images/bar.png" alt="bar" />
+              <img src="../images/bar.php" alt="bar" />
             </div>
             <div class="info">
               <ol>
@@ -77,7 +77,7 @@
         <div class="box2">
           <div class="box">
             <div class="logo">
-              <img src="/images/hotel.png" alt="hotel" />
+              <img src="../images/hotel.php" alt="hotel" />
             </div>
             <div class="info">
               <ol>
@@ -110,7 +110,7 @@
         <div class="box3">
           <div class="box">
             <div class="logo">
-              <img src="/images/rest.png" alt="rest" />
+              <img src="../images/rest.php" alt="rest" />
             </div>
             <div class="info">
               <ol>
@@ -147,7 +147,7 @@
 
         <div class="dropdown_container">
           <div class="logo">
-            <img src="/images/bar.png" alt="bar" />
+            <img src="../images/bar.php" alt="bar" />
           </div>
           <label for="options">Select an option:</label>
           <select id="options">
@@ -190,7 +190,7 @@
         <!-- box2 ----------------------------------------------------------------------------------- -->
         <div class="dropdown_container">
           <div class="logo">
-            <img src="/images/hotel.png" alt="hotel" />
+            <img src="../images/hotel.php" alt="hotel" />
           </div>
           <label for="options">Select an option:</label>
           <select id="options">
@@ -245,7 +245,7 @@
         <!-- box3------------------------------------------------------------------------------------------- -->
         <div class="dropdown_container">
           <div class="logo">
-            <img src="/images/rest.png" alt="rest" />
+            <img src="../images/rest.php" alt="rest" />
           </div>
           <label for="options">Select an option:</label>
           <select id="options">
@@ -291,7 +291,7 @@
       </div>
     </section>
 
-    <script src="/script/travelly.js"></script>
-    <script src="/script/food.js"></script>
+    <script src="../script/travelly.js"></script>
+    <script src="../script/food.js"></script>
   </body>
 </html>
