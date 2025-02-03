@@ -13,27 +13,27 @@
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="travelly.php#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Packages</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
-        <li><a href="/html/book.html">Sign Up</a></li>
+        <li><a href="travelly.phohome">Home</a></li>
+        <li><a href="travelly.pho#destination">Destination</a></li>
+        <li><a href="travelly.pho#package">Packages</a></li>
+        <li><a href="travelly.pho#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
+        <li><a href="../html/book.php">Sign Up</a></li>
       </ul>
 
       <!-- toggle btn -->
       <div class="toggle_btn">
-        <img src="/images/menu.png" alt="" />
+        <img src="../images/menu.php" alt="" />
       </div>
 
       <!--responsive navbar -->
       <div class="dropdown_menu">
-        <li><a href="travelly.html#home">Home</a></li>
-        <li><a href="travelly.html#destination">Destination</a></li>
-        <li><a href="travelly.html#package">Packages</a></li>
-        <li><a href="travelly.html#about">About Us</a></li>
-        <li><a href="/html/contact.html">Contact Us</a></li>
-        <li><a href="/html/book.html">Sign Up</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
+        <li><a href="travelly.php#destination">Destination</a></li>
+        <li><a href="travelly.php#package">Packages</a></li>
+        <li><a href="travelly.php#about">About Us</a></li>
+        <li><a href="../html/contact.php">Contact Us</a></li>
+        <li><a href="../html/book.php">Sign Up</a></li>
       </div>
     </header>
     <!-- mountain -------------------------------------------------------------------------------------------------- -->
@@ -41,10 +41,10 @@
       <div class="mountain-container">
         <!-- box1 -->
         <div class="box1">
-          <a href="/html/login.html">
+          <a href="../html/login.php">
             <div class="trip1">
               <div class="pic">
-                <img src="/images/trip1.jpg" alt="" />
+                <img src="../images/trip1.php" alt="" />
                 <h3>$559</h3>
               </div>
               <div class="mountain-content">
@@ -56,10 +56,10 @@
             </div>
           </a>
 
-          <a href="/html/login.html">
+          <a href="../html/login.php">
             <div class="trip1">
               <div class="pic">
-                <img src="/images/trip2.jpg" alt="" />
+                <img src="../images/trip2.php" alt="" />
                 <h3>$529</h3>
               </div>
               <div class="mountain-content">
@@ -71,10 +71,10 @@
             </div>
           </a>
 
-          <a href="/html/login.html">
+          <a href="../html/login.php">
             <div class="trip1">
               <div class="pic">
-                <img src="/images/trip3.jpg" alt="" />
+                <img src="../images/trip3.php" alt="" />
                 <h3>$649</h3>
               </div>
               <div class="mountain-content">
@@ -88,10 +88,10 @@
         </div>
         <!-- box2 -->
         <div class="box2">
-          <a href="/html/login.html">
+          <a href="../html/login.php">
             <div class="trip1">
               <div class="pic">
-                <img src="/images/trip4.jpg" alt="" />
+                <img src="../images/trip4.php" alt="" />
                 <h3>$599</h3>
               </div>
               <div class="mountain-content">
@@ -103,10 +103,10 @@
             </div>
           </a>
 
-          <a href="/html/login.html">
+          <a href="../html/login.php">
             <div class="trip1">
               <div class="pic">
-                <img src="/images/trip5.jpg" alt="" />
+                <img src="../images/trip5.php" alt="" />
                 <h3>$899</h3>
               </div>
               <div class="mountain-content">
@@ -118,10 +118,10 @@
             </div>
           </a>
 
-          <a href="/html/login.html">
+          <a href="../html/login.php">
             <div class="trip1">
               <div class="pic">
-                <img src="/images/trip6.jpg" alt="" />
+                <img src="../images/trip6.php" alt="" />
                 <h3>$1299</h3>
               </div>
               <div class="mountain-content">
@@ -135,6 +135,6 @@
         </div>
       </div>
     </section>
-    <script src="/script/travelly.js"></script>
+    <script src="../script/travelly.js"></script>
   </body>
 </html>
