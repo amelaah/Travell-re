@@ -22,7 +22,7 @@
 
       <!-- toggle btn -->
       <div class="toggle_btn">
-        <img src="/images/menu.png" alt="" />
+        <img src="../images/menu.php" alt="" />
       </div>
 
       <!--responsive navbar -->
