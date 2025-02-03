@@ -9,8 +9,20 @@ $database ="travelly";
 $conn =mysqli_connect($servername, $username, $password, $database);
 
 // nese lidhja sosht succecful:(
-if(!$conn){
-    die("Connection failed!:". mysqli_connect_error());
+if(!$conn->connect_error){
+    die("Connection failed!:". $conn->error);
+}
+
+// funksioni per user 
+function getAllUsers($conn){
+    $sql = "SELECT * FROM users";
+    $result = $conn->query($sql);
+
+    $users = [];
+    while ($row = $result->fetch_assoc()) {
+        $users[] = $rows;
+    }
+    return $users;
 }
 
 ?>
