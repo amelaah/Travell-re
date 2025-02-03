@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountains</title>
-    <link rel="stylesheet" href="/css/mountain.css" />
+    <link rel="stylesheet" href="../css/mountain.css" />
   </head>
   <body>
     <!-- navbar --------------------------------------------------------------------------------------------->
     <header class="sticky">
-      <a href="/html/travelly.html" class="logo">travelly</a>
+      <a href="../html/travelly.php" class="logo">travelly</a>
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="travelly.html#home">Home</a></li>
+        <li><a href="travelly.php#home">Home</a></li>
         <li><a href="travelly.html#destination">Destination</a></li>
         <li><a href="travelly.html#package">Packages</a></li>
         <li><a href="travelly.html#about">About Us</a></li>
