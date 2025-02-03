@@ -1,14 +1,18 @@
 <?php
 session_start();
-// mbyll variablat e session
-session_unset();
-session_destroy();
 
-// shkatrron cookies tu i kthy ne koh mbrapa per 1 or ne ket rast
-setcookie("user_email", "", time() - 3600, "/");
-setcookie("user_password", "", time() - 3600, "/");
-setcookie("is_logged_in", "", time() - 3600, "/");
+// e bon page refresh per mos me cache data
+header("Cache-Control: no-cache, no-store, must-revalidate"); 
+// nese osht older version
+ header("Pragma: no-cache");
+header("Expires: 0");
 
-header("Location: /html/travelly.html");
+ require_once 'user.php'; 
+// krijon instance
+ $user = new User($conn);
+//  thirr metoden log out
+ $user->logout();
+
+ header("Location: /html/travelly.html");
 exit();
 ?>
