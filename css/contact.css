@@ -109,6 +109,8 @@ header {
   background: transparent;
   padding: 30px 18%;
   transition: ease 0.4s;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
 }
 
 header.sticky {
@@ -126,6 +128,10 @@ header.sticky {
 }
 
 .sticky .logo {
+  color: var(--gunmetal);
+}
+
+.sticky .logo:hover {
   color: var(--white);
 }
 
@@ -175,7 +181,7 @@ header.sticky {
 .help {
   position: relative;
   text-align: center;
-  padding-top: 85px;
+  padding-top: 110px;
 }
 
 .help h2 {
