@@ -1,9 +1,6 @@
 <?php
 require_once 'user.php';  //e perfshin user.php per me perdor klasen user 
 
-// lidhja me databaz
-include 'database.php';
-
 //kontrollon nese kerkesa eshte bere me metoden POST
 if ($_SERVER["REQUEST_METHOD"]  == "POST") {
     //i merr te dhenat e futura nga perdoruesi    
