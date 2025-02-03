@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travelly</title>
 
-    <link rel="stylesheet" href="/css/travelly.css" />
+    <link rel="stylesheet" href="../css/travelly.css" />
 
     <!-- google font ------------------------------------------------------------------------------------------- -->
 
@@ -29,14 +29,14 @@
         <li><a href="#destination">Destination</a></li>
         <li><a href="#package">Packages</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="/html/book.html">Sign Up</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="../html/book.php">Sign Up</a></li>
 
         <!-- sign out button -->
 
         
         <li>
-          <form action="/php/signOut.php" method="POST" id="sign-out-button">
+          <form action="../php/signOut.php" method="POST" id="sign-out-button">
             <a href="">Sign Out</a> 
           </form>
         </li>
@@ -47,7 +47,7 @@
       <!-- toggle btn -->
 
       <div class="toggle_btn">
-        <img src="/images/menu.png" alt="" />
+        <img src="../images/menu.php" alt="" />
       </div>
 
       <!-- responsive navbar -->
@@ -57,11 +57,11 @@
         <li><a href="#destination">Destination</a></li>
         <li><a href="#package">Packages</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="book.html">Sign Up</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        <li><a href="book.php">Sign Up</a></li>
         <!-- njejt qitu posht me id per sign out -->
         <li>  
-          <form action="/php/signOut.php" method="POST" id="sign-out-button">
+          <form action="../php/signOut.php" method="POST" id="sign-out-button">
             <a href="">Sign Out</a> 
           </form>
         </li>
@@ -79,7 +79,7 @@
           Adventures
         </h2>
         <br />
-        <a href="book.html" class="home-btn"> Book now</a>
+        <a href="../html/book.php" class="home-btn"> Book now</a>
       </div>
     </section>
 
@@ -91,40 +91,40 @@
       </div>
 
       <div class="row-items">
-        <a href="/html/flight.html">
+        <a href="../html/flight.php">
           <div class="container-box">
             <div class="container-img">
-              <img src="/images/plane.png" />
+              <img src="../images/plane.php" />
             </div>
             <h4>Flight Tour</h4>
             <p>150 Properties</p>
           </div>
         </a>
 
-        <a href="/html/summer-vacation.html">
+        <a href="../html/summer-vacation.php">
           <div class="container-box">
             <div class="container-img">
-              <img src="/images/sun.png" />
+              <img src="../images/sun.php" />
             </div>
             <h4>Summer Rest</h4>
             <p>150 Properties</p>
           </div>
         </a>
 
-        <a href="/html/food.html">
+        <a href="../html/food.php">
           <div class="container-box">
             <div class="container-img">
-              <img src="/images/plate.png" />
+              <img src="../images/plate.php" />
             </div>
             <h4>Food Service</h4>
             <p>150 Properties</p>
           </div>
         </a>
 
-        <a href="/html/mountain.html">
+        <a href="../html/mountain.php">
           <div class="container-box">
             <div class="container-img">
-              <img src="/images/map (1).png" />
+              <img src="../images/map (1).php" />
             </div>
             <h4>Mountains</h4>
             <p>150 Properties</p>
@@ -144,7 +144,7 @@
       <div class="package-content">
         <div class="box">
           <div class="idk">
-            <img src="/images/paris.jpg" alt="" />
+            <img src="../images/paris.php" alt="" />
             <h3>$499</h3>
           </div>
           <div class="dest-content">
@@ -157,7 +157,7 @@
 
         <div class="box">
           <div class="idk">
-            <img src="/images/brasil.jpg" alt="" />
+            <img src="../images/brasil.php" alt="" />
             <h3>$999</h3>
           </div>
           <div class="dest-content">
@@ -170,7 +170,7 @@
 
         <div class="box">
           <div class="idk">
-            <img src="/images/rome.jpg" alt="" />
+            <img src="../images/rome.php" alt="" />
             <h3>$299</h3>
           </div>
           <div class="dest-content">
@@ -183,7 +183,7 @@
 
         <div class="box">
           <div class="idk">
-            <img src="/images/dubai.jpg" alt="" />
+            <img src="../images/dubai.php" alt="" />
             <h3>$1499</h3>
           </div>
           <div class="dest-content">
@@ -196,7 +196,7 @@
 
         <div class="box">
           <div class="idk">
-            <img src="/images/koln.jpg" alt="" />
+            <img src="../images/koln.php" alt="" />
             <h3>$299</h3>
           </div>
           <div class="dest-content">
@@ -252,12 +252,12 @@
           </p>
         </div>
         <div class="about_foto">
-          <img src="/images/id.png" alt="" />
+          <img src="../images/id.php" alt="" />
         </div>
       </div>
     </section>
 
     <!-- javascript ------------------------------------------------------------------------------------------------ -->
-    <script src="/script/travelly.js"></script>
+    <script src="../script/travelly.js"></script>
   </body>
 </html>
