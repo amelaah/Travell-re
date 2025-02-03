@@ -1,52 +1,27 @@
 <?php
-session_start();
-// faqja me i refresh te dhanat dmth mos mi rujt
-header("Cache-Control: no-cache, no-store, must-revalidate"); 
-header("Pragma: no-cache"); 
-header("Expires: 0");
+require_once 'user.php';  //e perfshin user.php per me perdor klasen user 
 
 // lidhja me databaz
 include 'database.php';
 
-// i merr te dhanat i shtin ne variablat first_name e neper tjerat edhe kontrollon a u mush forma e regjistrimit
+//kontrollon nese kerkesa eshte bere me metoden POST
 if ($_SERVER["REQUEST_METHOD"]  == "POST") {
-    $first_name =$_POST['first_name'];
+    //marrim te dhenat e formularit qe i ka dergu perdoruesi gjat regjistrimit
+    $first_name = $_POST['first_name'];
     $last_name = $_POST['last_name'];
-    $email= $_POST['email'];
-    $password= password_hash($_POST['password'],PASSWORD_DEFAULT); 
+    $email = $_POST['email'];
+    $password = $_POST['password']; 
+    $remember_me = isset($_POST['remember_me']);
 
-//   sql statment kjo i shtin te dhanat ne databaz ne menyr te sigurt 
-    $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?)");
+    //krijojm nje User objekt dhe bejm lidhjen me bazen e te dhenave
+    $user = new User($conn);
 
-    // ktu qato ? i kthen ne actual users data edhe i tregon sql se jon string(ssss)
-    $stmt->bind_param("ssss", $first_name, $last_name, $email, $password);
-// egzekutohet qaj statment
-    if ($stmt->execute()) {
-        echo "Registration successful!";
-
-// i run useers id edhe first name ne sessions per me mujt me kon log in edhe mas regjistrimit
-        $_SESSION['user_id'] = $conn->insert_id; 
-        $_SESSION['first_name'] = $first_name;
-
-        // me mbajt men user qe osht log in per 30 dit
-        setcookie('is_logged_in', 'true', time() + (86400 * 30), '/');
-
-// me mbajt men email te user nese e prek remeber me
-        if (isset($_POST['remember_me'])) {
-           
-            setcookie("user_email", $email, time() + (30 * 24 * 60 * 60), "/");
-          
-        } 
-            header("Location: /html/travelly.html");
-            exit();
-        
-    }    else  {
-        
-        echo "Error:" . $conn->error;
+    //regjistron perdoruesin
+    if ($user->register($first_name, $last_name, $email, $password, $remember_me)) {
+        header("Location: /html/travelly.html");  //nese regjistrimi ka sukses, qojme perdoruesin te faqja kryesore
+        exit();
+    } else {
+        echo "Registration failed!";  //nese regjistrimi deshton, shfaq ket
     }
-
-// mbyllja databzes dhe statment te sql
- $stmt->close();
- $conn->close();
 }
 ?>
