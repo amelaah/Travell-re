@@ -126,7 +126,7 @@ header.sticky {
 }
 
 .sticky .logo {
-  color: var(--gunmetal);
+  color: var(--white);
 }
 
 .navbar {
@@ -134,7 +134,7 @@ header.sticky {
 }
 
 .navbar a {
-  color: var(--l-blue);
+  color: var(--gunmetal);
   font-family: Arial, Helvetica, sans-serif;
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
@@ -145,7 +145,7 @@ header.sticky {
 
 .navbar a:hover {
   background: transparent;
-  color: var(--gunmetal);
+  color: var(--white);
   box-shadow: 5px 10px 30px rgba(26, 41, 77, 0.3);
   border-radius: 4px;
 }

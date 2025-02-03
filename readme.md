@@ -2,9 +2,9 @@
 
 https://github.com/amelaah/Travell-re.git
 
-<!-- grupi:
+<!-- grupi:G5
 
-Amela Haxholli 232470135
-Viona Krasniqi 232470133
+Amela Haxholli 232470135      <3
+Viona Krasniqi 232470133      <3
 
  -->
