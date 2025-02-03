@@ -9,7 +9,7 @@
   <body>
     <!-- navbar ------------------------------------------------------------------------------------------ -->
     <header class="sticky">
-      <a href="travelly.html" class="logo">travelly</a>
+      <a href="travelly.php" class="logo">travelly</a>
 
       <ul class="navbar">
         <li><a href="travelly.php#home">Home</a></li>

@@ -13,7 +13,7 @@
       <div class="bx bx-menu" id="menu-icon"></div>
 
       <ul class="navbar">
-        <li><a href="/html/travelly.html">Home</a></li>
+        <li><a href="../html/travelly.php">Home</a></li>
         <li><a href="travelly.php#destination">Destination</a></li>
         <li><a href="travelly.php#package">Packages</a></li>
         <li><a href="travelly.php#about">About Us</a></li>
