@@ -84,5 +84,26 @@ public function logout() {
     header("Location: ../html/travelly.php");
     exit();
 }
+public function updateEmail($user_id, $new_email) {
+    $stmt = $this->conn->prepare("UPDATE users SET email = ? WHERE id = ?");
+    $stmt->bind_param("si", $new_email, $user_id);
+
+    if ($stmt->execute()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+public function deleteUser($user_id) {
+    $stmt = $this->conn->prepare("DELETE FROM users WHERE id = ?");
+    $stmt->bind_param("i", $user_id);
+
+    if ($stmt->execute()) {
+        return true;
+    } else {
+        return false;
+    }
+}
 }
 ?>
