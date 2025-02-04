@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `users`
 --
 
+CREATE DATABASE IF NOT EXISTS travelly;
+USE travelly;
+
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `first_name` varchar(50) NOT NULL,
