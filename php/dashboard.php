@@ -24,6 +24,9 @@ if ($result) {
     while ($row = $result->fetch_assoc()) {
         $users[] = $row;
     }
+} else {
+    echo "No users found.";
 }
+
 ?>
 
