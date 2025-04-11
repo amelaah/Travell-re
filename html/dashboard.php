@@ -32,6 +32,6 @@
     </tbody>
   </table>
 
-  <<script src="../script/dashboard.js"></script>
+  <script src="../script/dashboard.js"></script>
 </body>
 </html>
