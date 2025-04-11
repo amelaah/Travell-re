@@ -1,24 +1,24 @@
 <?php
-include 'database.php';  // Make sure this includes your database connection
+// Connect to database
+$conn = new mysqli("localhost", "root", "", "travelly");
 
-// Get total users
-$total_users_query = "SELECT COUNT(*) AS total FROM users";
-$total_users_result = $conn->query($total_users_query);
-$total_users = $total_users_result->fetch_assoc()['total'];
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-// Get logged-in users (those who have a last_login timestamp)
-$logged_in_query = "SELECT COUNT(*) AS total FROM users WHERE last_login IS NOT NULL";
-$logged_in_result = $conn->query($logged_in_query);
-$logged_in_users = $logged_in_result->fetch_assoc()['total'];
-
-// Get the 5 most recent users
-$recent_users_query = "SELECT name, email, created_at FROM users ORDER BY created_at DESC LIMIT 5";
-$recent_users_result = $conn->query($recent_users_query);
-
-$recent_users = [];
-while ($row = $recent_users_result->fetch_assoc()) {
-    $recent_users[] = $row;
+    $stmt = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $password);
+    $stmt->execute();
+    $stmt->close();
+    header("Location: dashboard.php"); // Refresh to clear form
+    exit();
 }
 
-?>
+// Get total users
+$total = $conn->query("SELECT COUNT(*) AS total FROM users")->fetch_assoc()["total"];
 
+// Get recent users
+$recent = $conn->query("SELECT name, email, created_at FROM users ORDER BY created_at DESC LIMIT 5");
+?>
