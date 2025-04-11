@@ -1,61 +1,39 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Travelly Dashboard</title>
-    <style>
-        body { font-family: sans-serif; max-width: 700px; margin: 30px auto; }
-        h1 { color: #444; }
-        .box { background: #f9f9f9; padding: 15px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ddd; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { padding: 8px; border-bottom: 1px solid #ccc; text-align: left; }
-        input { padding: 8px; margin: 5px 0; width: 100%; box-sizing: border-box; }
-        button { padding: 10px 15px; background: #2d89ef; color: white; border: none; cursor: pointer; }
-        button:hover { background: #1b66c9; }
-    </style>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 
-    <h1>Travelly Dashboard</h1>
+    <h1>Travelly - Admin Dashboard</h1>
 
-    <div class="box">
-        <strong>Total Users:</strong> <?php echo $total; ?>
-    </div>
-
-    <div class="box">
+    <section class="add-user">
         <h2>Add User</h2>
-        <form method="POST">
-            <label>Name</label>
-            <input type="text" name="name" required>
-            
-            <label>Email</label>
-            <input type="email" name="email" required>
-            
-            <label>Password</label>
-            <input type="password" name="password" required>
-            
+        <form method="POST" action="dashboard.php">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
             <button type="submit">Add User</button>
         </form>
-    </div>
+    </section>
 
-    <div class="box">
-        <h2>Recent Users</h2>
+    <section class="user-list">
+        <h2>All Users</h2>
         <table>
-    <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Created At</th>
-    </tr>
-    <?php foreach ($recent as $row): ?>
-        <tr>
-            <td><?= htmlspecialchars($row["name"]) ?></td>
-            <td><?= htmlspecialchars($row["email"]) ?></td>
-            <td><?= $row["created_at"] ?></td>
-        </tr>
-    <?php endforeach; ?>
-</table>
-
-    </div>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <?php include 'dashboard.php'; foreach ($users as $user): ?>
+                <tr>
+                    <td><?= htmlspecialchars($user['name']) ?></td>
+                    <td><?= htmlspecialchars($user['email']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    </section>
 
 </body>
 </html>
+

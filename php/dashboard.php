@@ -16,17 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 
-$total = 0;
-
-// Get total users
-$result = $conn->query("SELECT COUNT(*) AS total FROM users");
-if ($result && $row = $result->fetch_assoc()) {
-    $total = $row['total'];
-}
 
 // Get recent users
-$recent = [];
-$result = $conn->query("SELECT name, email, created_at FROM users ORDER BY created_at DESC LIMIT 5");
+$users = [];
+$result = $conn->query("SELECT name, email,FROM users ");
 if ($result) {
     while ($row = $result->fetch_assoc()) {
         $recent[] = $row;
