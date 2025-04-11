@@ -10,7 +10,7 @@ $conn =new mysqli($servername, $username, $password, $database);
 
 // nese lidhja sosht succecful:(
 if($conn->connect_error){
-    die("Connection failed!:". $conn->connection_error);
+    die("Connection failed!:". $conn->connect_error);
 }else{
     header("Location: ../html/travelly.php");
 }
