@@ -8,6 +8,7 @@
 
     <h1>Travelly - Admin Dashboard</h1>
 
+    <!-- Add User Form -->
     <section class="add-user">
         <h2>Add User</h2>
         <form method="POST" action="dashboard.php">
@@ -18,6 +19,7 @@
         </form>
     </section>
 
+    <!-- User List Table -->
     <section class="user-list">
         <h2>All Users</h2>
         <table>
@@ -25,12 +27,18 @@
                 <th>Name</th>
                 <th>Email</th>
             </tr>
-            <?php  foreach ($users as $user): ?>
+            <?php if (empty($users)): ?>
                 <tr>
-                    <td><?= htmlspecialchars($user['name']) ?></td>
-                    <td><?= htmlspecialchars($user['email']) ?></td>
+                    <td colspan="2">No users found.</td>
                 </tr>
-            <?php endforeach; ?>
+            <?php else: ?>
+                <?php foreach ($users as $user): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($user['name']) ?></td>
+                        <td><?= htmlspecialchars($user['email']) ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </table>
     </section>
 

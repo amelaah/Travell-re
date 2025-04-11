@@ -27,6 +27,6 @@ if ($result) {
 } else {
     echo "No users found+.";
 }
-
+$conn->close();
 ?>
 
