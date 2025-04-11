@@ -41,19 +41,20 @@
     <div class="box">
         <h2>Recent Users</h2>
         <table>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Created At</th>
-            </tr>
-            <?php while ($row = $recent->fetch_assoc()): ?>
-                <tr>
-                    <td><?= htmlspecialchars($row["name"]) ?></td>
-                    <td><?= htmlspecialchars($row["email"]) ?></td>
-                    <td><?= $row["created_at"] ?></td>
-                </tr>
-            <?php endwhile; ?>
-        </table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Created At</th>
+    </tr>
+    <?php foreach ($recent as $row): ?>
+        <tr>
+            <td><?= htmlspecialchars($row["name"]) ?></td>
+            <td><?= htmlspecialchars($row["email"]) ?></td>
+            <td><?= $row["created_at"] ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
     </div>
 
 </body>
