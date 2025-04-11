@@ -1,25 +1,30 @@
 <?php
 include 'database.php';
 
-// Count total users
-$total_users = $conn->query("SELECT COUNT(*) AS total FROM users")->fetch_assoc()['total'];
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get data from the form
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);  // Hash the password
+    $created_at = $_POST['created_at'];
+    $last_login = $_POST['last_login'] ?? NULL;  // Allow null for last_login if not provided
 
-// Count users who have logged in at least once
-$logged_in_users = $conn->query("SELECT COUNT(*) AS total FROM users WHERE last_login IS NOT NULL")->fetch_assoc()['total'];
+    // Prepare SQL query
+    $stmt = $conn->prepare("INSERT INTO users (name, email, password, created_at, last_login) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $name, $email, $password, $created_at, $last_login);
 
-// Get last 5 signed up users
-$recent_users = $conn->query("SELECT name, email, created_at FROM users ORDER BY created_at DESC LIMIT 5");
+    // Execute the query
+    if ($stmt->execute()) {
+        echo "User added successfully!";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
 
-$data = [
-    "total_users" => $total_users,
-    "logged_in_users" => $logged_in_users,
-    "recent_users" => []
-];
-
-while ($row = $recent_users->fetch_assoc()) {
-    $data["recent_users"][] = $row;
+    $stmt->close();
+    $conn->close();
+} else {
+    echo "Invalid request.";
 }
-
-header('Content-Type: application/json');
-echo json_encode($data);
 ?>
+
