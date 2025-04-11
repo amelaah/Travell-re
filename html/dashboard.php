@@ -25,7 +25,7 @@
                 <th>Name</th>
                 <th>Email</th>
             </tr>
-            <?php include 'dashboard.php'; foreach ($users as $user): ?>
+            <?php  foreach ($users as $user): ?>
                 <tr>
                     <td><?= htmlspecialchars($user['name']) ?></td>
                     <td><?= htmlspecialchars($user['email']) ?></td>
