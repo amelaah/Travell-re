@@ -25,7 +25,7 @@ if ($result) {
         $users[] = $row;
     }
 } else {
-    echo "No users found+.";
+    echo "No users found.";
 }
 $conn->close();
 ?>
